@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets.css">
+    <link rel="icon" type="image/jpg" href="./img/pokeball.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Cormorant+Garamond:wght@300&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <title>Pokemon Game</title>
+</head>
+
+<body>
+
+    <div class="mainDiv">
+        <canvas></canvas>
+        <div id="blackScreen"> </div>
+
+        <div id="userInterface">
+            <div class="healthBar">
+                <h1>Draggle</h1>
+                <div>
+                    <div id="back"></div>
+                    <div id="health" class="enemyHealthBar"></div>
+                </div>
+            </div>
+
+            <div class="healthBar user">
+                <h1>Emby</h1>
+                <div>
+                    <div id="back"></div>
+                    <div id="health" class="playerHealthBar"></div>
+                </div>
+            </div>
+
+
+            <div id="attackBar">
+                <div class="quoteText"></div>
+                <div id="attacks">
+                </div>
+                <div id="attackType">
+                    <h1>Attack Type</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+        integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"
+        integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./data/audio.js"></script>
+    <script src="./data/collisions.js"></script>
+    <script src="./data/battleZones.js"></script>
+    <script src="./data/attacks.js"></script>
+    <script src="./functions/attacksInfo.js"></script>
+    <script src="./functions/classes.js"></script>
+    <script src="./functions/collisions&events.js"></script>
+    <script src="./functions/windowListeners.js"></script>
+    <script src="./functions/functions.js"></script>
+    <script src="./functions/spritesImages.js"></script>
+    <script src="./functions/sprites.js"></script>
+    <script src="./data/monsters.js"></script>
+    <script src="./functions/mapAnimation.js"></script>
+    <script src="./functions/battleAnimation.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
